@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Home Page
+</title>
+</head>
+<body>
+	<h3>URL Detection Form</h3> 
+<form action="{{url_for('prd')}}" method="POST">
+	<input type="text" placeholder="Give the URL" name="url">
+	<input type="submit" name="predict" value="predict">
+</form>
+                      
+{{ prediction }}  
+</body>
+</html>
